@@ -6,6 +6,9 @@ using System.Windows.Forms;
 
 namespace mini_kindle
 {
+    public delegate void FlipPageHandler(bool dir);
+    public delegate void HandleBkMk(bool a);
+    public delegate void UpdateDisplay(String page);
     static class Program
     {
         /// <summary>
