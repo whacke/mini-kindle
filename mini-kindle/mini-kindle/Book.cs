@@ -8,7 +8,7 @@ using System.Threading.Tasks;
  * 1) Decide how we want to do the constructor for the book
  * considering we probably want to keep current page and bookmarks
  * saved somewhere
- * 
+ * 2) Update UML to reflect those changes and the addition of title
 */
 namespace mini_kindle
 {
@@ -51,7 +51,7 @@ namespace mini_kindle
         /// <param name="a">true for add, false for remove</param>
         public void AddRemBkMk(int p, bool a)
         {
-            if (a)
+            if (a && bookmarks.Count < 3)
                 bookmarks.Add(p);
             else
                 bookmarks.Remove(p);
