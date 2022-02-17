@@ -40,7 +40,7 @@ namespace mini_kindle
         /// <summary>
         /// book constructor
         /// </summary>
-        public Book(String a, String t)
+        public Book()
         {
 
         }
