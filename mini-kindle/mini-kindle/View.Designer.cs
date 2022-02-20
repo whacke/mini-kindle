@@ -43,6 +43,7 @@ namespace mini_kindle
             this.mainTextBox.Location = new System.Drawing.Point(13, 13);
             this.mainTextBox.Multiline = true;
             this.mainTextBox.Name = "mainTextBox";
+            this.mainTextBox.ReadOnly = true;
             this.mainTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.mainTextBox.Size = new System.Drawing.Size(775, 374);
             this.mainTextBox.TabIndex = 0;
