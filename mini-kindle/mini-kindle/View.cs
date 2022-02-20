@@ -25,15 +25,19 @@ namespace mini_kindle
 
         public void Backward_Clicked(object sender, EventArgs e)
         {
-
+            fpHand(false);
         }
-        public void Bookmark_Clicked(object sender, EventArgs e)
+        public void AddBookmark_Clicked(object sender, EventArgs e)
         {
-
+            bkMkHand(true);
+        }
+        public void RemoveBookmark_Clicked(object sender, EventArgs e)
+        {
+            bkMkHand(false);
         }
         public void Forward_Clicked(object sender, EventArgs e)
         {
-
+            fpHand(true);
         }
     }
 }
