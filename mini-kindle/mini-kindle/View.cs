@@ -12,9 +12,15 @@ namespace mini_kindle
 {
     public partial class View : Form
     {
-        public View()
+        private FlipPageHandler fpHand;
+        private BookMkHandler bkMkHand;
+        private SelectBookDel selectBookHand;
+        public View(FlipPageHandler fp, BookMkHandler bkMk, SelectBookDel selectBook)
         {
             InitializeComponent();
+            fpHand = fp;
+            bkMkHand = bkMk;
+            selectBookHand = selectBook;
         }
 
         public void Backward_Clicked(object sender, EventArgs e)
