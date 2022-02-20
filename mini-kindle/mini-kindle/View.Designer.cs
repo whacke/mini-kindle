@@ -29,21 +29,21 @@ namespace mini_kindle
         /// </summary>
         private void InitializeComponent()
         {
-            this.manTextBox = new System.Windows.Forms.TextBox();
+            this.mainTextBox = new System.Windows.Forms.TextBox();
             this.backwardButton = new System.Windows.Forms.Button();
             this.addBookmark = new System.Windows.Forms.Button();
             this.forwardButton = new System.Windows.Forms.Button();
             this.removeBookMark = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // manTextBox
+            // mainTextBox
             // 
-            this.manTextBox.Location = new System.Drawing.Point(13, 13);
-            this.manTextBox.Multiline = true;
-            this.manTextBox.Name = "manTextBox";
-            this.manTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.manTextBox.Size = new System.Drawing.Size(775, 374);
-            this.manTextBox.TabIndex = 0;
+            this.mainTextBox.Location = new System.Drawing.Point(13, 13);
+            this.mainTextBox.Multiline = true;
+            this.mainTextBox.Name = "mainTextBox";
+            this.mainTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.mainTextBox.Size = new System.Drawing.Size(775, 374);
+            this.mainTextBox.TabIndex = 0;
             // 
             // backwardButton
             // 
@@ -94,7 +94,7 @@ namespace mini_kindle
             this.Controls.Add(this.forwardButton);
             this.Controls.Add(this.addBookmark);
             this.Controls.Add(this.backwardButton);
-            this.Controls.Add(this.manTextBox);
+            this.Controls.Add(this.mainTextBox);
             this.Name = "View";
             this.Text = "mini-kindle";
             this.ResumeLayout(false);
@@ -104,7 +104,7 @@ namespace mini_kindle
 
         #endregion
 
-        private System.Windows.Forms.TextBox manTextBox;
+        private System.Windows.Forms.TextBox mainTextBox;
         private System.Windows.Forms.Button backwardButton;
         private System.Windows.Forms.Button addBookmark;
         private System.Windows.Forms.Button forwardButton;

@@ -39,5 +39,10 @@ namespace mini_kindle
         {
             fpHand(true);
         }
+
+        public void UpdateDisplay(string text)
+        {
+            mainTextBox.Text = text;
+        }
     }
 }
