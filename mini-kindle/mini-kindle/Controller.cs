@@ -30,8 +30,11 @@ namespace mini_kindle
 
         public void FlipPage(bool dir)
         {
-            if (curBook != null) curBook.FlipPage(dir);
-            updateDisplayHand(curBook.GetCurPageText());
+            if (curBook != null)
+            {
+                curBook.FlipPage(dir);
+                updateDisplayHand(curBook.GetCurPageText());
+            }
         }
 
         public void HandleBkMk(bool a)
@@ -42,8 +45,11 @@ namespace mini_kindle
         public void HandleSelectBook(String title, String fullText)
         {
             Book book = library.AddBook(title, fullText);
-            if (book != null) curBook = book;
-            updateDisplayHand(book.GetCurPageText());
+            if (book != null)
+            {
+                curBook = book;
+                updateDisplayHand(book.GetCurPageText());
+            }
         }
     }
 }
