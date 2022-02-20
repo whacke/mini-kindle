@@ -9,6 +9,8 @@ namespace mini_kindle
     public delegate void FlipPageHandler(bool dir);
     public delegate void HandleBkMk(bool a);
     public delegate void UpdateDisplay(String page);
+    public delegate void SelectBookDel(Book b);
+
     static class Program
     {
         /// <summary>
@@ -19,7 +21,7 @@ namespace mini_kindle
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new View());
         }
     }
 }

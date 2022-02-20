@@ -20,7 +20,7 @@ namespace mini_kindle
         /// </summary>
         public Library()
         {
-
+            library = new List<Book>();
         }
     }
 }
