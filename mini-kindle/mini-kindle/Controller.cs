@@ -13,31 +13,19 @@ namespace mini_kindle
     {
         private Library library;
         private Book curBook;
-        private UpdateDisplayDel updateDisplayHand;
         //refresh delegate here
 
         public Controller()
         {
-            curBook = null;
-            library = new Library();
+
         }
 
-        public void AssignDisplay(UpdateDisplayDel del)
+        public void FlipPage()
         {
-            updateDisplayHand = del;
-        }
 
-        public void FlipPage(bool dir)
-        {
-            if (curBook != null) curBook.FlipPage(dir);
         }
 
         public void HandleBkMk(bool a)
-        {
-            curBook.AddRemBkMk(a);
-        }
-
-        public void HandleSelectBook(Book b)
         {
 
         }
