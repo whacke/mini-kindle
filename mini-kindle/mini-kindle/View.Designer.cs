@@ -35,6 +35,7 @@ namespace mini_kindle
             this.forwardButton = new System.Windows.Forms.Button();
             this.removeBookMark = new System.Windows.Forms.Button();
             this.uxOpenFile = new System.Windows.Forms.OpenFileDialog();
+            this.bookSelector = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // mainTextBox
@@ -86,11 +87,22 @@ namespace mini_kindle
             this.removeBookMark.UseVisualStyleBackColor = true;
             this.removeBookMark.Click += new System.EventHandler(this.RemoveBookmark_Clicked);
             // 
+            // bookSelector
+            // 
+            this.bookSelector.Location = new System.Drawing.Point(13, 393);
+            this.bookSelector.Name = "bookSelector";
+            this.bookSelector.Size = new System.Drawing.Size(122, 35);
+            this.bookSelector.TabIndex = 5;
+            this.bookSelector.Text = "Select Book";
+            this.bookSelector.UseVisualStyleBackColor = true;
+            this.bookSelector.Click += new System.EventHandler(this.uxOpenMenu_Click);
+            // 
             // View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.bookSelector);
             this.Controls.Add(this.removeBookMark);
             this.Controls.Add(this.forwardButton);
             this.Controls.Add(this.addBookmark);
@@ -111,6 +123,7 @@ namespace mini_kindle
         private System.Windows.Forms.Button forwardButton;
         private System.Windows.Forms.Button removeBookMark;
         private System.Windows.Forms.OpenFileDialog uxOpenFile;
+        private System.Windows.Forms.Button bookSelector;
     }
 }
 
