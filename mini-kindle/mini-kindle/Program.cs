@@ -7,8 +7,8 @@ using System.Windows.Forms;
 namespace mini_kindle
 {
     public delegate void FlipPageHandler(bool dir);
-    public delegate void HandleBkMk(bool a);
-    public delegate void UpdateDisplay(String page);
+    public delegate void BookMkHandler(bool a);
+    public delegate void UpdateDisplayDel(String page);
     public delegate void SelectBookDel(Book b);
 
     static class Program
@@ -21,7 +21,11 @@ namespace mini_kindle
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new View());
+            Controller c = new Controller();
+            View view = new View(c.FlipPage, c.HandleBkMk, c.HandleSelectBook);
+            Application.Run(view);
+            c.AssignDisplay(view.UpdateDisplay);
+            
         }
     }
 }

@@ -49,12 +49,12 @@ namespace mini_kindle
         /// </summary>
         /// <param name="p">page number in question</param>
         /// <param name="a">true for add, false for remove</param>
-        public void AddRemBkMk(int p, bool a)
+        public void AddRemBkMk(bool a)
         {
             if (a && bookmarks.Count < 3)
-                bookmarks.Add(p);
+                bookmarks.Add(currentPage);
             else
-                bookmarks.Remove(p);
+                bookmarks.Remove(currentPage);
         }
         /// <summary>
         /// Method to flip a page
