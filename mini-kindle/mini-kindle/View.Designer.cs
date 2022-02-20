@@ -34,6 +34,7 @@ namespace mini_kindle
             this.addBookmark = new System.Windows.Forms.Button();
             this.forwardButton = new System.Windows.Forms.Button();
             this.removeBookMark = new System.Windows.Forms.Button();
+            this.uxOpenFile = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // mainTextBox
@@ -109,6 +110,7 @@ namespace mini_kindle
         private System.Windows.Forms.Button addBookmark;
         private System.Windows.Forms.Button forwardButton;
         private System.Windows.Forms.Button removeBookMark;
+        private System.Windows.Forms.OpenFileDialog uxOpenFile;
     }
 }
 
