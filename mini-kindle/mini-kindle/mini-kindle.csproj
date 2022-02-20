@@ -49,16 +49,16 @@
     <Compile Include="Book.cs" />
     <Compile Include="Controller.cs" />
     <Compile Include="Library.cs" />
-    <Compile Include="mini-kindle.cs">
+    <Compile Include="View.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mini-kindle.Designer.cs">
-      <DependentUpon>mini-kindle.cs</DependentUpon>
+    <Compile Include="View.Designer.cs">
+      <DependentUpon>View.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="mini-kindle.resx">
-      <DependentUpon>mini-kindle.cs</DependentUpon>
+    <EmbeddedResource Include="View.resx">
+      <DependentUpon>View.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -19,6 +19,7 @@ namespace mini_kindle
         {
 
         }
+
         public void FlipPage()
         {
 
