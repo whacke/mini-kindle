@@ -16,5 +16,18 @@ namespace mini_kindle
         {
             InitializeComponent();
         }
+
+        public void Backward_Clicked(object sender, EventArgs e)
+        {
+
+        }
+        public void Bookmark_Clicked(object sender, EventArgs e)
+        {
+
+        }
+        public void Forward_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
