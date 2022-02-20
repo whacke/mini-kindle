@@ -9,7 +9,7 @@ namespace mini_kindle
     public delegate void FlipPageHandler(bool dir);
     public delegate void BookMkHandler(bool a);
     public delegate void UpdateDisplayDel(String page);
-    public delegate void SelectBookDel(Book b);
+    public delegate void SelectBookDel(String title, String fullText);
 
     static class Program
     {

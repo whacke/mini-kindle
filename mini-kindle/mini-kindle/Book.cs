@@ -40,7 +40,7 @@ namespace mini_kindle
         /// <summary>
         /// book constructor
         /// </summary>
-        public Book()
+        public Book(String fullText, String title)
         {
 
         }
@@ -62,10 +62,19 @@ namespace mini_kindle
         /// <param name="dir">true to go forward, false to go backwards</param>
         public void FlipPage(bool dir)
         {
-            if (dir)
+            if (dir && currentPage < pages.Count)
                 currentPage++;
-            else
+            else if (currentPage > 1)
                 currentPage--;
+        }
+
+        /// <summary>
+        /// Returns the text of the current page;
+        /// </summary>
+        /// <returns></returns>
+        public String GetCurPageText()
+        {
+            return pages[currentPage];
         }
     }
 }

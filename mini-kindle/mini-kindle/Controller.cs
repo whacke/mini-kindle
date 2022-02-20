@@ -23,10 +23,6 @@ namespace mini_kindle
             library = new Library();
         }
 
-        public void FlipPage()
-        {
-
-        }
         public void AssignDisplay(UpdateDisplayDel del)
         {
             updateDisplayHand = del;
@@ -35,16 +31,19 @@ namespace mini_kindle
         public void FlipPage(bool dir)
         {
             if (curBook != null) curBook.FlipPage(dir);
+            updateDisplayHand(curBook.GetCurPageText());
         }
 
         public void HandleBkMk(bool a)
         {
-            curBook.AddRemBkMk(a);
+            if (curBook != null) curBook.AddRemBkMk(a);
         }
 
-        public void HandleSelectBook(Book b)
+        public void HandleSelectBook(String title, String fullText)
         {
-
+            Book book = library.AddBook(title, fullText);
+            if (book != null) curBook = book;
+            updateDisplayHand(book.GetCurPageText());
         }
     }
 }

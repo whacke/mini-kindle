@@ -22,5 +22,16 @@ namespace mini_kindle
         {
             library = new List<Book>();
         }
+
+        public Book AddBook(String title, String fullText)
+        {
+            Book b = new Book(fullText, title);
+            if (library.Count < 25)
+            {
+                library.Add(b);
+                return b;
+            }
+            return null;
+        }
     }
 }
