@@ -26,11 +26,15 @@ namespace mini_kindle
         public Book AddBook(String title, String fullText)
         {
             Book b = new Book(fullText, title);
-            if (library.Count < 25)
+            if (library.Contains(b))
+            {
+                return b;
+            }
+            else if (library.Count < 25)
             {
                 library.Add(b);
                 return b;
-            }
+            } 
             return null;
         }
     }

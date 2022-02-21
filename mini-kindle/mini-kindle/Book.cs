@@ -106,8 +106,25 @@ namespace mini_kindle
         /// <returns></returns>
         public String GetCurPageText()
         {
-            if (currentPage >= pages.Count) currentPage = currentPage - 1; // stops reader from going past the end of the book
+            if (currentPage >= pages.Count) currentPage--; // stops reader from going past the end of the book
             return pages[currentPage];
+        }
+
+        public override bool Equals(object obj)
+        {
+            if(obj is Book b)
+            {
+                return (b.title == this.title);
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
         }
     }
 }
