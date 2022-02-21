@@ -28,7 +28,15 @@ namespace mini_kindle
             Book b = new Book(fullText, title);
             if (library.Contains(b))
             {
-                return b;
+                int bookIndex = 0;
+                for(int i = 0; i < library.Count; i++)
+                {
+                    if (b.Equals(library[i]))
+                    {
+                        bookIndex = i;
+                    }
+                }
+                return library[bookIndex];
             }
             else if (library.Count < 25)
             {

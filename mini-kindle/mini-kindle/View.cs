@@ -41,9 +41,12 @@ namespace mini_kindle
             fpHand(true);
         }
 
-        public void UpdateDisplay(string text)
+        public void UpdateDisplay(string text, int pageNum, bool bkMk)
         {
             mainTextBox.Text = text;
+            if (bkMk) uxBookMarkCheck.Checked = true;
+            else uxBookMarkCheck.Checked = false;
+            uxPageLabel.Text = "Page " + (pageNum + 1);
         }
 
         private void uxOpenMenu_Click(object sender, EventArgs e)

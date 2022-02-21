@@ -79,13 +79,12 @@ namespace mini_kindle
         /// <summary>
         /// Method to add or remove a bookmark
         /// </summary>
-        /// <param name="p">page number in question</param>
         /// <param name="a">true for add, false for remove</param>
         public void AddRemBkMk(bool a)
         {
-            if (a && bookmarks.Count < 3)
+            if (a && bookmarks.Count < 3 && !bookmarks.Contains(currentPage))
                 bookmarks.Add(currentPage);
-            else
+            else if (!a)
                 bookmarks.Remove(currentPage);
         }
         /// <summary>
@@ -108,6 +107,25 @@ namespace mini_kindle
         {
             if (currentPage >= pages.Count) currentPage--; // stops reader from going past the end of the book
             return pages[currentPage];
+        }
+
+        /// <summary>
+        /// Returns current page number
+        /// </summary>
+        /// <returns></returns>
+        public int GetCurPageNumber()
+        {
+            return currentPage;
+        }
+
+        /// <summary>
+        /// Returns if Current Page has a bookmark
+        /// </summary>
+        /// <returns></returns>
+        public bool CheckPageBookMark()
+        {
+            if (bookmarks.Contains(currentPage)) return true;
+            return false;
         }
 
         public override bool Equals(object obj)

@@ -32,13 +32,17 @@ namespace mini_kindle
             if (curBook != null)
             {
                 curBook.FlipPage(dir);
-                updateDisplayHand(curBook.GetCurPageText());
+                updateDisplayHand(curBook.GetCurPageText(), curBook.GetCurPageNumber(), curBook.CheckPageBookMark());
             }
         }
 
         public void HandleBkMk(bool a)
         {
-            if (curBook != null) curBook.AddRemBkMk(a);
+            if (curBook != null)
+            {
+                curBook.AddRemBkMk(a);
+                updateDisplayHand(curBook.GetCurPageText(), curBook.GetCurPageNumber(), curBook.CheckPageBookMark());
+            }
         }
 
         public void HandleSelectBook(String title, String fullText)
@@ -47,7 +51,7 @@ namespace mini_kindle
             if (book != null)
             {
                 curBook = book;
-                updateDisplayHand(book.GetCurPageText());
+                updateDisplayHand(curBook.GetCurPageText(), curBook.GetCurPageNumber(), curBook.CheckPageBookMark());
             }
         }
     }
