@@ -8,3 +8,24 @@ C:\Users\twpow\Desktop\CIS501\Team2E1Repository\mini-kindle\mini-kindle\mini-kin
 C:\Users\twpow\Desktop\CIS501\Team2E1Repository\mini-kindle\mini-kindle\mini-kindle\obj\Debug\mini-kindle.csproj.CoreCompileInputs.cache
 C:\Users\twpow\Desktop\CIS501\Team2E1Repository\mini-kindle\mini-kindle\mini-kindle\obj\Debug\mini-kindle.exe
 C:\Users\twpow\Desktop\CIS501\Team2E1Repository\mini-kindle\mini-kindle\mini-kindle\obj\Debug\mini-kindle.pdb
+C:\Users\maroe\Documents\School\Academics\Spring 2022\CIS 501\Exam 1 Mini Kindle\mini-kindle\mini-kindle\bin\Debug\mini-kindle.exe.config
+C:\Users\maroe\Documents\School\Academics\Spring 2022\CIS 501\Exam 1 Mini Kindle\mini-kindle\mini-kindle\bin\Debug\mini-kindle.exe
+C:\Users\maroe\Documents\School\Academics\Spring 2022\CIS 501\Exam 1 Mini Kindle\mini-kindle\mini-kindle\bin\Debug\mini-kindle.pdb
+C:\Users\maroe\Documents\School\Academics\Spring 2022\CIS 501\Exam 1 Mini Kindle\mini-kindle\mini-kindle\obj\Debug\mini-kindle.csproj.AssemblyReference.cache
+C:\Users\maroe\Documents\School\Academics\Spring 2022\CIS 501\Exam 1 Mini Kindle\mini-kindle\mini-kindle\obj\Debug\mini-kindle.csproj.SuggestedBindingRedirects.cache
+C:\Users\maroe\Documents\School\Academics\Spring 2022\CIS 501\Exam 1 Mini Kindle\mini-kindle\mini-kindle\obj\Debug\mini_kindle.View.resources
+C:\Users\maroe\Documents\School\Academics\Spring 2022\CIS 501\Exam 1 Mini Kindle\mini-kindle\mini-kindle\obj\Debug\mini_kindle.Properties.Resources.resources
+C:\Users\maroe\Documents\School\Academics\Spring 2022\CIS 501\Exam 1 Mini Kindle\mini-kindle\mini-kindle\obj\Debug\mini-kindle.csproj.GenerateResource.cache
+C:\Users\maroe\Documents\School\Academics\Spring 2022\CIS 501\Exam 1 Mini Kindle\mini-kindle\mini-kindle\obj\Debug\mini-kindle.csproj.CoreCompileInputs.cache
+C:\Users\maroe\Documents\School\Academics\Spring 2022\CIS 501\Exam 1 Mini Kindle\mini-kindle\mini-kindle\obj\Debug\mini-kindle.exe
+C:\Users\maroe\Documents\School\Academics\Spring 2022\CIS 501\Exam 1 Mini Kindle\mini-kindle\mini-kindle\obj\Debug\mini-kindle.pdb
+C:\Users\Acer\Desktop\501ExtraCredit\mini-kindle\mini-kindle\mini-kindle\obj\Debug\mini-kindle.csproj.AssemblyReference.cache
+C:\Users\Acer\Desktop\501ExtraCredit\mini-kindle\mini-kindle\mini-kindle\obj\Debug\mini_kindle.View.resources
+C:\Users\Acer\Desktop\501ExtraCredit\mini-kindle\mini-kindle\mini-kindle\obj\Debug\mini_kindle.Properties.Resources.resources
+C:\Users\Acer\Desktop\501ExtraCredit\mini-kindle\mini-kindle\mini-kindle\obj\Debug\mini-kindle.csproj.GenerateResource.cache
+C:\Users\Acer\Desktop\501ExtraCredit\mini-kindle\mini-kindle\mini-kindle\obj\Debug\mini-kindle.csproj.CoreCompileInputs.cache
+C:\Users\Acer\Desktop\501ExtraCredit\mini-kindle\mini-kindle\mini-kindle\obj\Debug\mini-kindle.exe
+C:\Users\Acer\Desktop\501ExtraCredit\mini-kindle\mini-kindle\mini-kindle\obj\Debug\mini-kindle.pdb
+C:\Users\Acer\Desktop\501ExtraCredit\mini-kindle\mini-kindle\mini-kindle\bin\Debug\mini-kindle.exe.config
+C:\Users\Acer\Desktop\501ExtraCredit\mini-kindle\mini-kindle\mini-kindle\bin\Debug\mini-kindle.exe
+C:\Users\Acer\Desktop\501ExtraCredit\mini-kindle\mini-kindle\mini-kindle\bin\Debug\mini-kindle.pdb

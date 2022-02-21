@@ -4,12 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-/* TODO:
- * 1) Decide how we want to do the constructor for the book
- * considering we probably want to keep current page and bookmarks
- * saved somewhere
- * 2) Update UML to reflect those changes and the addition of title
-*/
 namespace mini_kindle
 {
     /// <summary>
@@ -37,11 +31,49 @@ namespace mini_kindle
         /// list of bookmark page numbers 
         /// </summary>
         private List<int> bookmarks;
+
+        /// <summary>
+        /// Number of characters displayed on a page
+        /// </summary>
+        private const int pageLength = 1800;
+
         /// <summary>
         /// book constructor
         /// </summary>
         public Book(String fullText, String title)
         {
+            this.title = title; 
+            bookmarks = new List<int>();
+            pages = new List<string>();
+
+            // This section of code builds pages!
+            StringBuilder buildBook = new StringBuilder();
+            for(int i = 0; i < fullText.Length; i++) // This for loop traverses the entire text
+            {
+                for (int j = 0; j < pageLength; j++) // This for loop tracks the length of this individual page!
+                {
+                    if(i >= fullText.Length) // if we reached the end of the book, break the loop
+                    {
+                        break;
+                    }
+
+                    if(fullText[i].Equals(Environment.NewLine)) // this was in an attempt to format with newlines, but they don't seem to exist in .txt files, so ¯\_(ツ)_/¯
+                    {
+                        buildBook.Append(Environment.NewLine);
+                    }
+                    else
+                    {
+                        buildBook.Append(fullText[i]);
+                    }
+
+                    i++; // keep track of current caracter
+                }
+
+                string newPage = buildBook.ToString(); // create new page
+                pages.Add(newPage); // add new page
+                buildBook.Clear(); // clear room for new page
+
+            }
 
         }
         /// <summary>
@@ -64,7 +96,7 @@ namespace mini_kindle
         {
             if (dir && currentPage < pages.Count)
                 currentPage++;
-            else if (currentPage > 1)
+            else if (currentPage > 0)
                 currentPage--;
         }
 
@@ -74,7 +106,25 @@ namespace mini_kindle
         /// <returns></returns>
         public String GetCurPageText()
         {
+            if (currentPage >= pages.Count) currentPage--; // stops reader from going past the end of the book
             return pages[currentPage];
+        }
+
+        public override bool Equals(object obj)
+        {
+            if(obj is Book b)
+            {
+                return (b.title == this.title);
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
         }
     }
 }
