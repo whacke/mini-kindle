@@ -18,7 +18,6 @@ namespace mini_kindle
 
         public Controller()
         {
-
             curBook = null;
             library = new Library();
         }
