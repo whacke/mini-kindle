@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace mini_kindle
 {
@@ -45,8 +46,18 @@ namespace mini_kindle
             }
         }
 
-        public void HandleSelectBook(String title, String fullText)
+        public void HandleSelectBook(String title)
         {
+            String fullText = "";
+            using (StreamReader inFile = new StreamReader(title))
+            {
+                while (!inFile.EndOfStream)
+                {
+                    string line = inFile.ReadLine();
+                    fullText += line;
+                }
+            }
+
             Book book = library.AddBook(title, fullText);
             if (book != null)
             {

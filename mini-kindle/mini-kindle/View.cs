@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
+
 
 namespace mini_kindle
 {
@@ -51,19 +51,9 @@ namespace mini_kindle
 
         private void uxOpenMenu_Click(object sender, EventArgs e)
         {
-            String fullText = "";
             if (uxOpenFile.ShowDialog() == DialogResult.OK)
             {
-                string fname = uxOpenFile.FileName;
-                using (StreamReader inFile = new StreamReader(fname))
-                {
-                    while (!inFile.EndOfStream)
-                    {
-                        string line = inFile.ReadLine();
-                        fullText += line;
-                    }
-                }
-                selectBookHand(fname, fullText);
+                selectBookHand(uxOpenFile.FileName);
             }
         }
     }
